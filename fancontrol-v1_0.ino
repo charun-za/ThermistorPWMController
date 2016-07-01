@@ -12,7 +12,6 @@ June 2016
 This program reads the input from a thermistor (temperature sensor) and provides a PWM
 signal to 3 fans to either switch them off or spin them at various speeds accordingly.
 */
-
 //
 // START CONFIGURATION (do not edit anything above this line)
 //
@@ -25,9 +24,6 @@ unsigned int serial_baud = 9600; // Serial baud speed. Must match the baud set i
 // If temp drops below 50, the fan drops back to LOW_FAN speed. If the temp rises above 65 HI_FAN speed begins
 // If temp drops below 60, the fan drops back to MID_FAN speed.
 //
-// 0 ........................... 30 .. 35 ..............50 .. 55 ....... 60 .. 65 ...........
-// |                              |    |                 |     |          |     |
-// Off   
 int low_min_temp = 40;
 int low_max_temp = 55;
 int mid_min_temp = 55;
